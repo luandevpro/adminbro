@@ -16,6 +16,8 @@ app.use(bodyParser.json());
 
 app.use('/admin', router);
 
+app.use('/uploads', express.static('uploads'));
+
 app.listen(8080, () => {
   console.log(`http://localhost:8080`);
 });

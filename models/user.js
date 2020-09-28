@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const schema = {
   name: String,
   email: String,
+  avatar: String,
   encryptedPassword: {
     type: String,
     required: true,
